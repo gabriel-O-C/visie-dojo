@@ -1,0 +1,1 @@
+Arquivos para as graduações de faixa da visie.
