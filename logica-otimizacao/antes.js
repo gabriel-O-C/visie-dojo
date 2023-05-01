@@ -40,14 +40,19 @@ let users = [
     "name": "Clementina DuBuque",
   }
 ]
-const list = document.getElementById('list')
 
 
+function isUser(){
+  const ids = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-list.appendChild(document.createElement('li'))
+  users.map((user) => {
+    if(ids.includes(user.id)){
+      console.log('é o usuário')
+    }
+    else {
+      console.log('não é')
+    }
+  })
 
-
-list.innerHTML = `
-      ${users.sort((a, b) => b.name < a.name).map((user) => `<li id=${user.id}>` + user.name + '</li>')}
-  `
-
+}
+isUser()
